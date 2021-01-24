@@ -31,9 +31,14 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <!--9 am-->
-      <div id="rowOne">
-        <textarea></textarea>
-        <button></button>
+      <div id="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">9 am</span>
+        </div>
+        <textarea value="" type="text" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button></button>
+        </div>
       </div>
       <!--10 am-->
       <div id="rowTwo">
@@ -43,7 +48,7 @@
       <!--11 am-->
       <div id="rowThree">
         <textarea></textarea>
-        <button></button>
+        <button id="saveBtn"></button>
       </div>
       <!--12 pm-->
       <div id="rowFour">
