@@ -56,16 +56,16 @@ $(document).ready(function () {
         localStorage.setItem(hour, event);
     })
 
-    $('#nineAm .description').val(localStorage.getItem("nineAm"))
-    console.log($('#nineAm .description').val(localStorage.getItem("nineAm")))
-    $('#tenAm .description').val(localStorage.getItem("tenAm"))
-    $('#elevenAm .description').val(localStorage.getItem("elevenAm"))
-    $('#twelvePm .description').val(localStorage.getItem("twelvePm"))
-    $('#onePm .description').val(localStorage.getItem("onePm"))
-    $('#twoPm .description').val(localStorage.getItem("twoPm"))
-    $('#threePm .description').val(localStorage.getItem("threePm"))
-    $('#fourPm .description').val(localStorage.getItem("fourPm"))
-    $('#fivePm .description').val(localStorage.getItem("fivePm"))
+    $('#9 .description').val(localStorage.getItem("9"))
+    console.log($('#9 .description').val(localStorage.getItem("9")))
+    $('#10 .description').val(localStorage.getItem("10"))
+    $('#11 .description').val(localStorage.getItem("11"))
+    $('#12 .description').val(localStorage.getItem("12"))
+    $('#13 .description').val(localStorage.getItem("13"))
+    $('#14 .description').val(localStorage.getItem("14"))
+    $('#15 .description').val(localStorage.getItem("15"))
+    $('#16 .description').val(localStorage.getItem("16"))
+    $('#17 .description').val(localStorage.getItem("17"))
 
 });
 
