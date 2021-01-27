@@ -2,15 +2,48 @@
 var date = moment().format('MMMM Do YYYY');
 $('#currentDay').html(date);
 
+console.log($('#currentDay').html(date));
+
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
-// var currentTime = moment().getHours();
+var rightNow = new Date();
+console.log("Current hour: " + rightNow);
 
-// function colorCode() {
-//     for (var i = 0; i <10; i++)
-//     if (currentTime < i)
+var currentTime = rightNow.getHours();
+console.log(rightNow.getHours());
+
+function colorCode() {
+    for (var i = 9; i <18; i++)
+    if (i > currentTime) {
+        $('#'+ i).children('textarea').addClass('future');
+    } else if (i < currentTime) {
+        $('#' + i).children('textarea').addClass('past');
+    } else if (i === currentTime) {
+        $('#' + i).children('textarea').addClass('present');
+    }
+    // var event = localStorage.getItem()
+};
+
+colorCode();
+
+// // var currentTime = moment().format('h a');
+// function colorCode(time) {
+//     var eventCurrentTime = moment(currentTime, 'h a');
+//     var eventBlock = moment(time, 'h a');
+//     if (eventBlock.isBefore(eventCurrentTime) === true) {
+//         return "past";
+//     } else if (eventBlock.isBefore(eventCurrentTime) === false) {
+//         return "future";
+//     } else {
+//         return "present";
+//     }
 // };
+
+colorCode();
+
+// console.log(moment(currentTime, 'h a'));
+// console.log(moment(time, 'h a'));
 
 
 //When clicked, save button stores text into local storage.
